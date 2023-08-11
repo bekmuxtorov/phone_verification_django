@@ -1,0 +1,5 @@
+Django==4.2
+environs==9.5.0
+djangorestframework==3.14.0
+eskiz_sms==0.2.3
+requests==2.31.0
