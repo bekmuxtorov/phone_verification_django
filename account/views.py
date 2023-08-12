@@ -52,6 +52,7 @@ def sent_verification_code(request):
         user.verification_code = sent_sms_to_phone_number(
             phone_number=phone_number
         )
+        user.set_password = data.get('set_password')
         user.save()
 
     return Response(
