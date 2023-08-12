@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 
-from .manager import UserManager
+from .managers import UserManager
 
 
 class User(AbstractBaseUser, PermissionsMixin):
@@ -18,7 +18,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     )
     region = models.CharField(
         verbose_name='Region',
-        max_length=50
+        max_length=50,
+        null=True
     )
     is_staff = models.BooleanField(
         verbose_name="is staff",
