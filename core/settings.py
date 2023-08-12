@@ -148,5 +148,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'account.User'
 
+# eskiz settings
 ESKIZ_EMAIL = env.str('ESKIZ_EMAIL')
 ESKIZ_PASSWORD = env.str('ESKIZ_PASSWORD')
+
+# infobip settings
+INFOBIP_BASE_URL = env.str('INFOBIP_BASE_URL')
+INFOBIP_API_KEY = env.str('INFOBIP_API_KEY')
